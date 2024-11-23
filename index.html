@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcomeScreen">
+            <h1>🎈 Welcome! 🎈</h1>
+            <p class="message">Siapa namanya nihh??</p>
+            <input type="text" id="nameInput" placeholder="Masukkan nama...">
+            <br>
+            <button onclick="startBirthday()">Mulai! 🎉</button>
+            <div class="cat" onclick="catTalk('Hai! Ayo masukkan namamu! 😺')">🐱</div>
+        </div>
+        <div class="cat-message" id="catMessage"></div>
+        
+        <!-- Birthday Screen -->
+        <div id="birthdayScreen">
+            <h1>Selamat Ulang Tahun! 🎉</h1>
+            <div class="message">
+                Selamat Ulang Tahun <span id="nameDisplay"></span>!
+                <br><br>
+                Semoga di hari spesialmu ini membawa kebahagiaan dan kesuksesan!
+            </div>
+            <div class="cake" id="cake">🎂</div>
+            <button onclick="celebrate()">Tiup Lilin! 🎉</button>
+            <div class="surprise-box" onclick="showSurprise()" id="surpriseBox">🎁</div>
+            <div class="cat" onclick="catParty()" id="birthdayCat">🐱</div>
+        </div>
+    </div>
+
+    <div id="fireworks"></div>
+</body>
+</html>
